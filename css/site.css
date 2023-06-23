@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+:root {
+   --color1: #031163;
+   --color2: #1978A5;
+   --color3: #05716C;
+   --color4: #1FBFB8;
+   --color-font:#ddd2d2;
+   /* --main-bg-color: rgba(255, 255, 255, 0.716);
+   --main-color: rgb(7, 0, 0);
+   --main-a-color: #0c27d7; */
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 300;
+   font-size: 36px;
+   color: var(--color-font);
+}
+
+body {
+   max-width: 1440px;
+   margin: auto;
+   background-color: var(--main-bg-color);
+}
+
+header, footer {
+   background-color: black;
+   padding: 1rem;
+}
+
+p {
+   padding: 0.5rem 0;
+}
+
+#introduction {
+   background-color: var(--color1);
+   padding: 1rem;
+}
+
+#skills {
+   background-color: var(--color2);
+   padding: 1rem;
+}
+
+#work-experience {
+   background-color: var(--color3);
+   padding: 1rem;
+}
+
+#contact {
+   background-color: var(--color4);
+   padding: 1rem;
+   color: black;
+}
+
+form {
+   padding: 0 15%;
+   display: grid;
+   grid-template-columns: auto;  
+}
+
+form > div {
+   display: flex;
+   justify-content: center;
+}
+
+input, textarea {
+   font-size: 1rem;
+}
+
+button {
+   font-size: 0.75rem;
+   padding: 0.25rem 5%;
+   margin: 0.25rem;
+}
+
+footer {
+   /* position: absolute;
+   bottom: 10px; */
+}
+
+a {
+   color: var(--main-a-color);
+}
+
+table {
+   
+}
+
+th {
+   width: 50%;
+   text-align: left;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/site.css">
+   <title>Brett Portfolio</title>
+</head>
+
+<body>
+   <header>
+      <h1>Brett's Portfolio</h1>
+   </header>
+   <main>
+      <div id="introduction">
+         <h2>Introduction</h2>
+         <p>This site has been created to showcase my ability as a software developer (web/other) and to a lesser extent a business analyst.</p>
+         <p>I am currently working as a solutions engineer in the <a
+               href="https://en.wikipedia.org/wiki/Telematics">telematics</a> space.
+         </p>
+      </div>
+
+      <div id="skills">
+         <h2>IT Skills</h2>
+         <ul></ul>
+      </div>
+      
+      <div id="work-experience">
+         <h2>Work Experience</h2>
+         <p>Here is a detailed work experience history.</p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Period</th>
+                  <th>Company</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>2003-2010</td>
+                  <td><a href="experience.html">Decillion/Cedef</a></td>
+               </tr>
+               <tr>
+                  <td>2011-2018</td>
+                  <td><a href="experience.html">EFG Bank</a></td>
+               </tr>
+               <tr>
+                  <td>2019-present</td>
+                  <td><a href="experience.html">Geotab</a></td>
+               </tr>
+
+            </tbody>
+         </table>
+      </div>
+
+      <div id="contact">
+         <h2>Contact me</h2>
+         <form id="contact-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+            <div>
+               <button type="submit">Contact Brett</button>
+               <button type="reset">Reset</button>
+            </div>
+         </form>
+      </div>
+   </main>
+   <footer>
+      &copy; <span id="copyrightYear">2023</span> by Brett Kelley
+   </footer>
+</body>
+
+</html>

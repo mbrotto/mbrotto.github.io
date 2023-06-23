@@ -1,0 +1,19 @@
+{
+   "skills": {
+      "Development tools": [
+         "Jira", "Git"
+      ],
+      "Programming languages": [
+         "JavaScript", "C#"
+      ],
+      "Methodologies": [
+         "Agile", "Waterfall"
+      ],
+      "Productivity": [
+         "MS Office", "Google Docs"
+      ],
+      "Cloud":[
+         "Google"
+      ]
+   }
+}
