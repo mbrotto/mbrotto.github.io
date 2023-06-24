@@ -4,10 +4,10 @@
 
    app.index = function() {
       app.pageItems.contactForm = document.getElementById('contact-form');
-      app.pageItems.contact.name = contactForm.querySelector('#name');
-      app.pageItems.email = contactForm.querySelector('#email');
-      app.pageItems.message = contactForm.querySelector('#message');
-      app.pageItems.contactForm.onsubmit = contactFormSubmit();
+      app.pageItems.contactName = app.pageItems.contactForm.querySelector('#name');
+      app.pageItems.contactEmail = app.pageItems.contactForm.querySelector('#email');
+      app.pageItems.contactMessage = app.pageItems.contactForm.querySelector('#message');
+      app.pageItems.contactForm.onsubmit = contactFormSubmit;
       // app.pageItems.skillsDiv = document.getElementById('skills');
       app.pageItems.skillsUl = document.querySelector('#skills ul');
    };
@@ -15,12 +15,12 @@
    function contactFormSubmit(e) {
       e.preventDefault();
 
-      const mailTo = `mailto:${app.pageItems.email.value}?subject=Contact From ${app.pageItems.name.value}&body=${app.pageItems.message.value}`;
+      const mailTo = `mailto:${app.pageItems.contactEmail.value}?subject=Contact From ${app.pageItems.contactName.value}&body=${app.pageItems.contactMessage.value}`;
       window.open(mailTo);
 
-      app.pageItems.name.value = '';
-      app.pageItems.email.value = '';
-      app.pageItems.message.value = '';
+      app.pageItems.contactName.value = '';
+      app.pageItems.contactEmail.value = '';
+      app.pageItems.contactMessage.value = '';
    }
 
    app.addSkills = async function() {
@@ -28,14 +28,23 @@
       //const rawData = await fetch('sitedata.json');
       const data = await skills.json();
 
-      for (let i = 0; i < data.skills.length; i++) {
-         console.log(data.skills[i]);
-         for (let j = 0; j < data.skills[i].length; j++) {
-            console.log('inner for loop');
-            console.log(data.skills[i][j]);
-            // const element = data.skills[i][j].length     
-         }
-      }
+      data.skills.forEach(element => {
+         Object.entries(element).forEach(([key, value]) => {
+            console.log(`${key}: ${value}`);
+            const skill = document.createElement('li');
+            skill.innerText = key;
+            const skillChildren = document.createElement('ul');
+            value.forEach(val => {
+               console.log(`Value is: ${val}`);
+               const skillChild = document.createElement('li');
+               skillChild.innerText = val;
+               skillChildren.appendChild(skillChild);
+            });
+            skill.appendChild(skillChildren);
+            app.pageItems.skillsUl.appendChild(skill);
+         });
+      });
+
    }
 
 })(window.app = window.app || {});
