@@ -54,7 +54,6 @@ p {
    position: absolute;
    margin: 1rem;
    color: #000;
-
 }
 
 #introduction img {
@@ -64,6 +63,16 @@ p {
 #skills {
    background-color: var(--color2);
    padding: 1rem;
+}
+
+.list-first {
+   list-style-type: circle;
+   padding-left: 1rem;
+}
+
+.list-second {
+   list-style-type: disc;
+   padding-left: 2rem;
 }
 
 #work-experience {

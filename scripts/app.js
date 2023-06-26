@@ -34,6 +34,7 @@
             const skill = document.createElement('li');
             skill.innerText = key;
             const skillChildren = document.createElement('ul');
+            skillChildren.classList.add('list-second');
             value.forEach(val => {
                console.log(`Value is: ${val}`);
                const skillChild = document.createElement('li');
