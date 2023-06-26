@@ -39,8 +39,26 @@ p {
 }
 
 #introduction {
+   display: flex;
    background-color: var(--color1);
-   padding: 1rem;
+   padding: 0.5rem;
+}
+
+.image-section {
+   position: relative;
+   padding: 0.5rem;
+}
+
+.image-section h1 {
+   /* align-items: center; */
+   position: absolute;
+   margin: 1rem;
+   color: #000;
+
+}
+
+#introduction img {
+   max-width: 100%;
 }
 
 #skills {
