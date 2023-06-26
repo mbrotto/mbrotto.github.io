@@ -1,0 +1,56 @@
+[
+  {
+    "Company": "EFG Bank",
+    "Location": "Geneva, Switzerland",
+    "Evolution": [
+      {
+        "start": "2016",
+        "end": "2019",
+        "role": "Product Owner"
+      },
+      {
+        "start": "2012",
+        "end": "2016",
+        "role": "Dev Ops"
+      },
+      {
+        "start": "2006",
+        "end": "2012",
+        "role": "Development"
+      }
+    ]
+  },
+  {
+    "Company": "Cedef SA",
+    "Location": "Nyon, Switzerland",
+    "Evolution": [
+      {
+        "start": "2003",
+        "end": "2006",
+        "role": "Development, Support"
+      }
+    ]
+  },
+  {
+    "Company": "KW Infotech Systems",
+    "Location": "Johannesburg, South Africa",
+    "Evolution": [
+      {
+        "start": "1995",
+        "end": "2002",
+        "role": "Owner, Developer"
+      }
+    ]
+  },
+  {
+    "Company": "The Standard Bank of South Africa",
+    "Location": "Johannesburg, South Africa",
+    "Evolution": [
+      {
+        "start": "1990",
+        "end": "1994",
+        "role": "Systems Implementation"
+      }
+    ]
+  }
+]
