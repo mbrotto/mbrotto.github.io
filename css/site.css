@@ -44,6 +44,10 @@ p {
    padding: 0.5rem;
 }
 
+.intro-section {
+   padding: 1rem;
+}
+
 .image-section {
    position: relative;
    padding: 0.5rem;
