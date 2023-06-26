@@ -2,6 +2,7 @@
   "skills": [
     { "Development tools": ["Jira", "Git"] },
     { "Programming languages": ["JavaScript", "C#"] },
+    { "Database": ["SQL Server", "PostgreSQL", "MySQL", "MSAccess"]},
     { "Methodologies": ["Agile", "Waterfall"] },
     { "Productivity": ["MS Office", "Google Docs"] },
     { "Cloud": ["Google"] }

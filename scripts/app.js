@@ -10,6 +10,7 @@
       app.pageItems.contactForm.onsubmit = contactFormSubmit;
       // app.pageItems.skillsDiv = document.getElementById('skills');
       app.pageItems.skillsUl = document.querySelector('#skills ul');
+      app.pageItems.workExperienceTable = document.querySelector('#work-experience table')
    };
 
    function contactFormSubmit(e) {
@@ -45,7 +46,38 @@
             app.pageItems.skillsUl.appendChild(skill);
          });
       });
+   }
 
+   app.addExperience = async function() {
+      const experience = await fetch('experience.json');
+      const data = await experience.json();
+
+      //remove existing rows
+      //app.pageItems.workExperienceTable.t
+
+      const new_tbody = document.createElement('tbody');
+
+      data.forEach(el => {
+         const tr = document.createElement('tr');
+         Object.entries(el).forEach(exp => {
+            let td = document.createElement('td');
+            td.innerText = el.Company;
+            tr.appendChild(td);
+            td = document.createElement('td');
+            td.innerText = el.Location;
+            tr.appendChild(td);            
+            td = document.createElement('td');
+            td.innerText = el.Start;
+            tr.appendChild(td);            
+            td = document.createElement('td');
+            td.innerText = el.End;
+            tr.appendChild(td);            
+            //console.log(el);
+         });
+         new_tbody.appendChild(tr);
+      });
+      app.pageItems.workExperienceTable.removeChild(app.pageItems.workExperienceTable.getElementsByTagName('tbody')[0]);
+      app.pageItems.workExperienceTable.appendChild(new_tbody);
    }
 
 })(window.app = window.app || {});

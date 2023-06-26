@@ -2,6 +2,8 @@
   {
     "Company": "EFG Bank",
     "Location": "Geneva, Switzerland",
+    "Start": "2006",
+    "End": "2016",
     "Evolution": [
       {
         "start": "2016",
@@ -23,6 +25,8 @@
   {
     "Company": "Cedef SA",
     "Location": "Nyon, Switzerland",
+    "Start": "2003",
+    "End": "2006",
     "Evolution": [
       {
         "start": "2003",
@@ -34,6 +38,8 @@
   {
     "Company": "KW Infotech Systems",
     "Location": "Johannesburg, South Africa",
+    "Start": "1995",
+    "End": "2002",
     "Evolution": [
       {
         "start": "1995",
@@ -45,6 +51,8 @@
   {
     "Company": "The Standard Bank of South Africa",
     "Location": "Johannesburg, South Africa",
+    "Start": "1990",
+    "End": "1994",
     "Evolution": [
       {
         "start": "1990",
