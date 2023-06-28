@@ -1,5 +1,18 @@
 [
   {
+    "Company": "Geotab",
+    "Location": "Home Office, Canada (Toronto)",
+    "Start": "2017",
+    "End": "Current",
+    "Evolution": [
+      {
+        "start": "2017",
+        "end": "Current",
+        "role": "Solutions Engineer, Developer"
+      }
+    ]
+  },
+  {
     "Company": "EFG Bank",
     "Location": "Geneva, Switzerland",
     "Start": "2006",

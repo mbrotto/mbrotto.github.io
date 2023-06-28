@@ -84,6 +84,15 @@ p {
    padding: 1rem;
 }
 
+#work-experience th {
+   width: 50%;
+   text-align: left;
+}
+
+#work-experience th, td {
+  padding: 15px;
+}
+
 #contact {
    background-color: var(--color4);
    padding: 1rem;
@@ -109,22 +118,9 @@ button {
    font-size: 0.75rem;
    padding: 0.25rem 5%;
    margin: 0.25rem;
-}
-
-footer {
-   /* position: absolute;
-   bottom: 10px; */
+   border-radius: 10px;
 }
 
 a {
    color: var(--main-a-color);
-}
-
-table {
-   
-}
-
-th {
-   width: 50%;
-   text-align: left;
 }
