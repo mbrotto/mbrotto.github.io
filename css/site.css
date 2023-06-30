@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
 
 :root {
+   --color-background-default: #000;
+   --color-default: #fff;
    --color1: #031163;
    --color2: #1978A5;
    --color3: #05716C;
    --color4: #1FBFB8;
-   --color-font:#ddd2d2;
+   --color:#ddd2d2;
    /* --main-bg-color: rgba(255, 255, 255, 0.716);
    --main-color: rgb(7, 0, 0);
    --main-a-color: #0c27d7; */
@@ -20,7 +22,8 @@ html {
    font-family: 'Quicksand', sans-serif;
    font-weight: 300;
    font-size: 36px;
-   color: var(--color-font);
+   background-color: var(--color-background-default);
+   color: var(--color-default);
 }
 
 body {
@@ -29,8 +32,33 @@ body {
    background-color: var(--main-bg-color);
 }
 
-header, footer {
-   background-color: black;
+.navbar {
+   position: sticky;
+   top: 0;
+   background-color: var(--color-background-default);
+   padding: 1rem;
+}
+
+nav ul {
+   margin: 0;
+}
+
+nav ul li {
+   list-style: none;
+   display: inline-block;
+   padding-right: 0.5rem;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+}
+
+header h1 {
+   text-align: center;
+}
+
+footer {
    padding: 1rem;
 }
 
