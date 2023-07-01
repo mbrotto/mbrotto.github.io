@@ -37,6 +37,7 @@ body {
    top: 0;
    background-color: var(--color-background-default);
    padding: 1rem;
+   z-index: 1;
 }
 
 nav ul {
@@ -118,7 +119,7 @@ p {
 }
 
 #work-experience th, td {
-  padding: 15px;
+  padding: 0 5px;
 }
 
 #contact {
