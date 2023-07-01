@@ -24,7 +24,7 @@
       app.pageItems.contactMessage.value = '';
    }
 
-   app.addSkills = async function() {
+   app.addSkills = async function(rootUlElement) {
       const skills = await fetch('skills.json');
       //const rawData = await fetch('sitedata.json');
       const data = await skills.json();
@@ -43,7 +43,7 @@
                skillChildren.appendChild(skillChild);
             });
             skill.appendChild(skillChildren);
-            app.pageItems.skillsUl.appendChild(skill);
+            rootUlElement.appendChild(skill);
          });
       });
    }
